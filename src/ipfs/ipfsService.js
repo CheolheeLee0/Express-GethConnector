@@ -15,3 +15,10 @@ export const getFile = async (cid) => {
   }
   return Buffer.concat(fileBuffer);
 };
+
+const fileAdded = await node.add({
+    path: 'hello.txt',
+    content: Buffer.from('Hello World 101')
+})
+
+console.log('Added file:', fileAdded.path, fileAdded.cid)
