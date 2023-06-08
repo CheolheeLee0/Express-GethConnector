@@ -1,8 +1,13 @@
 # unipicture Dapp - 학교 사진을 NFT로 소유, 공유, 거래하기
 unipicture는 사용자들이 학교의 사람들과 풍경 사진을 대체불가능한 토큰(NFT)으로 소유, 공유, 거래할 수 있도록 하는 탈중앙화 애플리케이션(Dapp)입니다. 이 Dapp은 프론트엔드에 Flutter를, 백엔드에 Node.js를 사용하며, 충남대학교 실험실에서 구축한 프라이빗 블록체인 네트워크와 IPFS를 통해 이미지를 안전하게, 탈중앙화된 방식으로 저장합니다.
 
+## Demo Video (Youtube)
+https://www.youtube.com/watch?v=fmjVwNiW-I4
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fmjVwNiW-I4/0.jpg)](https://www.youtube.com/watch?v=fmjVwNiW-I4)
+
 ## Architecture
-![image](https://github.com/eogml0716/Express-GethConnector/assets/78692286/d756c7cc-b492-41ca-997d-ca95ab04f26d)
+![image](https://github.com/CheolheeLee0/unipicture_dapp/assets/78692286/d2fb8d30-5e1a-4b6d-85f9-42c5e03a8941)
 
 ## Features
 1. 회원가입 및 로그인
