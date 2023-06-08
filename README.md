@@ -6,6 +6,36 @@ https://www.youtube.com/watch?v=fmjVwNiW-I4
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fmjVwNiW-I4/0.jpg)](https://www.youtube.com/watch?v=fmjVwNiW-I4)
 
+## Team
+## Team Members
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/eogml0716">
+        <img src="https://github.com/eogml0716.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>eogml0716</b></sub></a>
+        <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/Funbucket">
+        <img src="https://github.com/Funbucket.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>Funbucket</b></sub></a>
+        <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/CheolheeLee0">
+        <img src="https://github.com/CheolheeLee0.png" width="100px;" alt=""/>
+        <br />
+        <sub><b>CheolheeLee0</b></sub></a>
+        <br />
+    </td>
+  </tr>
+</table>
+
+
 ## Architecture
 ![image](https://github.com/eogml0716/Express-GethConnector/assets/78692286/55211bdc-6d8d-4a11-b3f7-83e5a9a9b6ac)
 
