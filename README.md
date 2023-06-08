@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=fmjVwNiW-I4
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fmjVwNiW-I4/0.jpg)](https://www.youtube.com/watch?v=fmjVwNiW-I4)
 
 ## Architecture
-![image](https://github.com/CheolheeLee0/unipicture_dapp/assets/78692286/d2fb8d30-5e1a-4b6d-85f9-42c5e03a8941)
+![image](https://github.com/eogml0716/Express-GethConnector/assets/78692286/55211bdc-6d8d-4a11-b3f7-83e5a9a9b6ac)
 
 ## Features
 1. 회원가입 및 로그인
