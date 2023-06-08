@@ -1,0 +1,41 @@
+# 이 GitHub Action의 이름을 "Node.js CD"로 설정합니다.
+name: Node.js CD
+
+# 이 Action은 "main" 브랜치에 push 이벤트가 발생할 때마다 실행됩니다.
+on:
+  push:
+    branches: [ main ]
+
+# 여러 작업들을 정의합니다. 여기서는 "build-and-deploy"라는 작업 하나만 정의합니다.
+jobs:
+  build-and-deploy:
+    # 이 작업은 "ubuntu-latest"라는 가장 최신의 Ubuntu 환경에서 실행됩니다.
+    runs-on: ubuntu-latest
+
+    # 작업에 필요한 단계들을 정의합니다.
+    steps:
+    # 첫 번째 단계에서는 작업을 위해 GitHub의 프로젝트 저장소를 체크아웃합니다.
+    - uses: actions/checkout@v2
+
+    # 두 번째 단계에서는 sshpass를 설치합니다. sshpass는 SSH 세션에 비밀번호를 자동으로 제공하는 데 사용됩니다.
+    - name: Install SSH client
+      run: sudo apt-get install sshpass -y
+
+    # 세 번째 단계에서는 서버로 배포합니다.
+    - name: Deploy to Server
+      # 여기에서는 호스트, 포트, 사용자 이름, 비밀번호, 배포 디렉토리와 같은 환경 변수를 설정합니다.
+      # 이 변수들의 값은 GitHub Secrets에서 가져옵니다.
+      env:
+        HOST: ${{ secrets.HOST }}
+        PORT: ${{ secrets.PORT }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+        DEPLOY_DIRECTORY: ${{ secrets.DEPLOY_DIRECTORY }}
+      # 아래의 명령들을 실행하여 서버에 배포합니다.
+      run: |
+        # 모든 파일을 package.tgz라는 tar 파일로 압축합니다.
+        tar -czf package.tgz *
+        # sshpass를 사용하여 생성된 tar 파일을 서버로 SCP(secure copy)합니다.
+        sshpass -p $PASSWORD scp -P $PORT -o StrictHostKeyChecking=no package.tgz $USERNAME@$HOST:$DEPLOY_DIRECTORY
+        # sshpass를 사용하여 서버에 SSH 로그인하고, 배포 디렉토리로 이동한 후 tar 파일을 압축 해제하고, npm을 사용하여 필요한 패키지들을 설치하고, 마지막으로 pm2를 사용하여 애플리케이션을 재시작합니다.
+        sshpass -p $PASSWORD ssh -p $PORT -o StrictHostKeyChecking=no $USERNAME@$HOST "cd $DEPLOY_DIRECTORY && tar -xzf package.tgz && npm install && pm2 restart your-app-name"
