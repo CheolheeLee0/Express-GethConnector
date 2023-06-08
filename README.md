@@ -6,7 +6,6 @@ https://www.youtube.com/watch?v=fmjVwNiW-I4
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/fmjVwNiW-I4/0.jpg)](https://www.youtube.com/watch?v=fmjVwNiW-I4)
 
-## Team
 ## Team Members
 
 <table>
