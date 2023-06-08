@@ -8,11 +8,13 @@ https://www.youtube.com/watch?v=fmjVwNiW-I4
 
 ## Team Members
 
-<div align="center">
+<div>
+  
 |[조해창](https://github.com/Funbucket)|[류대희](https://github.com/eogml0716)|[이철희](https://github.com/CheolheeLee0)
 |:---:|:---:|:---:|
 |<img src="https://github.com/Funbucket.png" width="120">|<img src="https://github.com/eogml0716.png" width="120">|<img src="https://github.com/CheolheeLee0.png" width="120">|
 |팀장|팀원|팀원|
+
 </div>
 
 ## Architecture
