@@ -8,32 +8,12 @@ https://www.youtube.com/watch?v=fmjVwNiW-I4
 
 ## Team Members
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/eogml0716">
-        <img src="https://github.com/eogml0716.png" width="100px;" alt=""/>
-        <br />
-        <sub><b>eogml0716</b></sub></a>
-        <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/Funbucket">
-        <img src="https://github.com/Funbucket.png" width="100px;" alt=""/>
-        <br />
-        <sub><b>Funbucket</b></sub></a>
-        <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/CheolheeLee0">
-        <img src="https://github.com/CheolheeLee0.png" width="100px;" alt=""/>
-        <br />
-        <sub><b>CheolheeLee0</b></sub></a>
-        <br />
-    </td>
-  </tr>
-</table>
-
+<div align="center">
+|[조해창](https://github.com/Funbucket)|[류대희](https://github.com/eogml0716)|[이철희](https://github.com/CheolheeLee0)
+|:---:|:---:|:---:|
+|<img src="https://github.com/Funbucket.png" width="120">|<img src="https://github.com/eogml0716.png" width="120">|<img src="https://github.com/CheolheeLee0.png" width="120">|
+|팀장|팀원|팀원|
+</div>
 
 ## Architecture
 ![image](https://github.com/eogml0716/Express-GethConnector/assets/78692286/55211bdc-6d8d-4a11-b3f7-83e5a9a9b6ac)
